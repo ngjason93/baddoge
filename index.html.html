@@ -1,0 +1,50 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<style>
+body{margin: 1vh}
+#mainimg {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation-duration: 2s;
+  animation-name: grow;
+  overflow: hidden;;
+
+}
+#hornyjail{
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+@keyframes grow {
+    from {
+        width: 100%;
+        height: 120%;
+    }
+    to {
+        width: 120%;
+        height: 120%;
+    }
+    }
+}
+</style>
+<body>
+<img id="mainimg" src=only.png>
+<img id="hornyjail" src="horn.png">
+
+</body>
+<script>
+function load(){
+    setTimeout(function(){
+        document.getElementById("mainimg").style.display="none";
+        document.getElementById("hornyjail").style.display = "block"
+    }, 2000)}
+window.onload=load
+    </script>
+</html>
